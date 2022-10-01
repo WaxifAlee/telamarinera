@@ -34,6 +34,17 @@
   }
 }
 
+@keyframes miniBarLoad {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
 .container {
   margin: 0;
   padding: 15px;
@@ -57,7 +68,14 @@
 }
 
 .navLinks a {
-  padding: 1rem;
+  padding: 0.8rem;
+  font-family: "Poppins";
+}
+
+.navLinks a:hover {
+  background-color: #361500;
+  color: white;
+  transition: 400ms all ease-in;
 }
 
 .logo {
@@ -72,10 +90,10 @@
 
 .miniContainer {
   padding: 1rem;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
-  visibility: hidden;
+  border: none;
 }
 
 .miniContainer button {
@@ -91,11 +109,36 @@
   animation: miniBarIcon 1s ease-in;
 }
 
+.miniBarLinks {
+  flex-direction: column;
+  position: absolute;
+  top: 42.5px;
+  padding: 1rem;
+  width: 50%;
+  right: 0;
+  overflow: hidden;
+  z-index: 100;
+  background-color: white;
+  list-style: none;
+  animation: miniBarLoad 1s ease-in;
+}
+
+.miniBarLinks a {
+  padding: 0.6rem;
+  font-family: "Coldiac";
+  color: #361500;
+}
+.miniBarLinks a:hover {
+  background-color: #361500;
+  color: white;
+  transition: 400ms all ease;
+}
+
 @media screen and (max-width: 768px) {
   .container {
-    visibility: hidden;
+    display: none;
   }
   .miniContainer {
-    visibility: visible;
+    display: flex;
   }
 }

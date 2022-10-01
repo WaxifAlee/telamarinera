@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div className={navStyle.miniContainer}>
+      <div className={navStyle.miniContainer}>
         <div className={navStyle.logo}>
           <Link href={"/"}>Telamarinera</Link>
         </div>
@@ -89,7 +89,28 @@ const Navbar = () => {
             {<FontAwesomeIcon icon={miniNav ? faTimes : faBars} />}{" "}
           </button>
         </div>
-      </div> */}
+      </div>
+      <ul
+        className={navStyle.miniBarLinks}
+        style={miniNav ? { display: "flex" } : { display: "none" }}
+      >
+        {navLinks.map((link) => (
+          <>
+            <a href={link.path}>
+              {link.text} {<FontAwesomeIcon icon={link.icon} />}
+            </a>
+          </>
+        ))}
+        <hr />
+        <a href="https://instagram.com">
+          {"Instagram "}
+          {<FontAwesomeIcon icon={faInstagram} />}
+        </a>
+        <a href="https://facebook.com">
+          {"Facebook "}
+          {<FontAwesomeIcon icon={faFacebook} />}
+        </a>
+      </ul>
     </>
   );
 };
