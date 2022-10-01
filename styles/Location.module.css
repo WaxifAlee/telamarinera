@@ -1,0 +1,27 @@
+.wrapper {
+  background-color: #361500;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container {
+  font-family: "Poppins";
+  color: #cc9544;
+  padding: 1.5rem;
+}
+
+.container a {
+  background-color: #cc9544;
+  color: #361500;
+  padding: 1rem;
+  position: relative;
+  top: 15px;
+}
+.container a:hover {
+  border: 2px solid #cc9544;
+  background: #361500;
+  color: #cc9544;
+  transition: 0.2s all ease-in-out;
+}

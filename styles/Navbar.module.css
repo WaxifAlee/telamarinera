@@ -1,0 +1,101 @@
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes miniBarIcon {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  border-bottom: 1px solid #361500;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.icons {
+  padding: 0.3em;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #361500;
+}
+.icons:hover {
+  background-color: #361500;
+  color: white;
+  transition: 0.4s all ease-in;
+}
+
+.navLinks a {
+  padding: 1rem;
+}
+
+.logo {
+  font-family: "Coldiac";
+  font-size: x-large;
+  color: #361500;
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 100ms;
+}
+
+.miniContainer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.miniContainer button {
+  background: none;
+  border: none;
+  color: #361500;
+  font-size: larger;
+  cursor: pointer;
+  transition: 2s all ease-in;
+}
+
+.miniContainer button:focus {
+  animation: miniBarIcon 1s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    visibility: hidden;
+  }
+  .miniContainer {
+    visibility: visible;
+  }
+}
