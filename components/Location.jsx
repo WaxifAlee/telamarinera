@@ -12,7 +12,7 @@ const Location = () => {
         </h1>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6648.406074394467!2d72.64057159423825!3d33.574077223737966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df74592db70997%3A0xc66e0810e2e8d04e!2zMzPCsDM0JzI2LjciTiA3MsKwMzgnNDEuOCJF!5e0!3m2!1sen!2s!4v1664625414121!5m2!1sen!2s"
-          width="400"
+          width="350"
           height="300"
           style={{ border: 2 }}
           allowfullscreen=""
