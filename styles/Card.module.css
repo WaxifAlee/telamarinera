@@ -1,11 +1,12 @@
 .cardWrapper {
   padding: 1rem;
+  border: 2px solid black;
 }
 .cardContainer {
   padding: 1rem;
   height: 250px;
-  background-color: #cc9544;
+  background-color: #361500;
   overflow-y: auto;
   word-wrap: break-word;
-  color: #361500;
+  color: #cc9544;
 }

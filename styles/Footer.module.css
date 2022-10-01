@@ -1,0 +1,20 @@
+.wrapper {
+  background: #361500;
+  color: #cc9544;
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container span:first-child {
+    display: none;
+  }
+  .container span:last-child {
+    font-size: 10px;
+  }
+}

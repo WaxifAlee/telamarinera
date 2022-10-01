@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 2rem;
+  background-color: #cc9544;
+  color: #361500;
+}
+.container {
+  text-align: center;
+}
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  padding: 1rem;
+  text-align: center;
+  border-right: 1px solid #603601;
+  color: #603601;
+  font-family: "Poppins";
+}
+
+.card h2 {
+  font-family: "Coldiac";
+}
+
+@media screen and (max-width: 768px) {
+  .cardsWrapper {
+    flex-direction: column;
+  }
+  .card {
+    border: none;
+    border-bottom: 1px solid #603601;
+  }
+}
