@@ -62,7 +62,12 @@ const Navbar = () => {
       <div className={navStyle.container}>
         <div className="social-icons">
           {icons.map((icon) => (
-            <a target={"_blank"} href={icon.url}>
+            <a
+              key={Math.floor(Math.random() * 9999999999) + 1}
+              target={"_blank"}
+              rel="noreferrer"
+              href={icon.url}
+            >
               <FontAwesomeIcon className={navStyle.icons} icon={icon.icon} />
             </a>
           ))}
@@ -72,7 +77,10 @@ const Navbar = () => {
         </div>
         <div className={navStyle.navLinks}>
           {navLinks.map((link) => (
-            <a href={link.path}>
+            <a
+              href={link.path}
+              key={Math.floor(Math.random() * 9999999999) + 1}
+            >
               {link.text} {<FontAwesomeIcon icon={link.icon} />}
             </a>
           ))}

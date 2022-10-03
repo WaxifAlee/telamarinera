@@ -1,0 +1,50 @@
+.wrapper {
+  background-color: #cc9544;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h2 {
+  font-family: "Coldiac";
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.form {
+  box-shadow: 8px 8px 22px #b1823b, -11px -11px 22px #e4a54d;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 25px;
+}
+
+.form input,
+.form textarea {
+  background: none;
+  border: 2px solid #1c0a00;
+  padding: 0.6rem;
+  margin: 3px;
+  color: #1c0a00;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #1c0a00;
+  font-weight: bold;
+}
+
+.form input[type="submit"] {
+  width: 100%;
+}
+
+.form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #1c0a00;
+  color: #cc9544;
+  border-radius: 5px;
+  transition: 400ms all ease;
+}

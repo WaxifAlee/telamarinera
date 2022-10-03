@@ -14,7 +14,7 @@ const Hero = () => {
           </h2>
           <h3>{"[ COMER - EN VIVO - REPETIR ]"}</h3>
 
-          <a href="/" className={heroStyles.callToAction}>
+          <a href="#" className={heroStyles.callToAction}>
             Letter
           </a>
         </div>

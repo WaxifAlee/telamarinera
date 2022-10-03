@@ -25,6 +25,7 @@ const Location = () => {
         <h3>Pásseo de la ribera</h3>
         <p>40, Dilar Spain</p>
         <a
+          rel="noreferrer"
           target={"_blank"}
           href="https://www.google.com/maps/place/33%C2%B034'26.7%22N+72%C2%B038'41.8%22E/@33.5740772,72.6405716,16z/data=!4m6!3m5!1s0x38df74592db70997:0xc66e0810e2e8d04e!7e2!8m2!3d33.5740772!4d72.644949"
         >
