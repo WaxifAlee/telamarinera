@@ -42,7 +42,7 @@ const Navbar = () => {
       icon: faLocation,
     },
     {
-      text: "Harrario", // Timing and email
+      text: "Horario", // Timing and email
       path: "#harrario",
       icon: faClock,
     },

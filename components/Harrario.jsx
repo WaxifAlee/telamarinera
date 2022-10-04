@@ -8,6 +8,7 @@ import {
   faClock,
   faPhone,
   faMailForward,
+  faFileContract,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -26,12 +27,11 @@ const Harrario = () => {
           <p>
             The Only thing we never compromise on is the quality of our food.{" "}
             <br />
-            Made out of fresh vegetables and meat, delivered directly from
-            farms.
+            Made out of fresh ingredients, delivered directly from farms.
           </p>
         </div>
         <div className={harrarioStyles.card}>
-          <h2>Hours Open {<FontAwesomeIcon icon={faClock} />} </h2>
+          <h2>HORARIO {<FontAwesomeIcon icon={faClock} />} </h2>
           <p>
             - Open Kitchen - From 11:00 a.m. to 12:00 a.m. So feel free to pay
             us a visit at any day of the week <br /> and let us serve you with
@@ -55,6 +55,11 @@ const Harrario = () => {
             <FontAwesomeIcon icon={faPhone} />
             <u>
               <a href="tel:938533678 "> 2. Make a Call</a>
+            </u>
+            <br />
+            <FontAwesomeIcon icon={faFileContract} />
+            <u>
+              <a href="#reserva "> Fill out the online form</a>
             </u>
           </p>
         </div>

@@ -46,31 +46,34 @@ const Reserva = () => {
         >
           <h2 style={{ fontFamily: "Poppins" }}> Book Your Seats!</h2>
           <hr color="#1C0A00" style={{ width: "30%" }} />
-          <input
-            required
-            placeholder="Full Name *"
-            type="text"
-            name="fromName"
-          />
+          <input required placeholder="Nombre *" type="text" name="fromName" />
           <input required placeholder="Email *" type="text" name="fromEmail" />
           <br />
           <input
             required
-            placeholder="Telephone *"
+            placeholder="Telefono *"
             type="text"
             name="telephone"
+            style={{ width: "100%" }}
           />
           <input
+            style={{ width: "100%" }}
             required
-            placeholder="Date *"
             type="date"
             name="reservationDate"
           />
           <br />
-          <input required placeholder="Time" type="time" name="timing" />
           <input
+            style={{ width: "100%" }}
             required
-            placeholder="Attendees *"
+            placeholder="Time"
+            type="time"
+            name="timing"
+          />
+          <input
+            style={{ width: "100%" }}
+            required
+            placeholder="Agregar respuesta aqui *"
             type="number"
             name="attendees"
           />
@@ -81,7 +84,7 @@ const Reserva = () => {
             cols="30"
             rows="10"
             style={{ resize: "none", width: "100%" }}
-            placeholder="Special Instructions (Optional)"
+            placeholder="Instrucciones Especiales (opcional)"
           ></textarea>
           <br />
           <input type="submit" value="Book Now!" />
