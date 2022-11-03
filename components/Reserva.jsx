@@ -35,8 +35,8 @@ const Reserva = () => {
   return (
     <div id="reserva" className={reservaStyles.wrapper}>
       <div className={reservaStyles.container}>
-        <h2>RESERVATIONS</h2>
-        <hr color="#361500" style={{ width: "80%" }} />
+        <h2>RESERVA</h2>
+        <hr color="#361500" style={{ width: "60%" }} />
 
         <form
           autoComplete="off"
@@ -44,7 +44,7 @@ const Reserva = () => {
           onSubmit={sendEmail}
           className={reservaStyles.form}
         >
-          <h2 style={{ fontFamily: "Poppins" }}> Book Your Seats!</h2>
+          <h2 style={{ fontFamily: "Poppins" }}> Reserva tu Mesa !</h2>
           <hr color="#1C0A00" style={{ width: "30%" }} />
           <input required placeholder="Nombre *" type="text" name="fromName" />
           <input required placeholder="Email *" type="text" name="fromEmail" />

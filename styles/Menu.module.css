@@ -1,0 +1,31 @@
+.page_container {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+
+  padding: 20px;
+}
+
+.page_container h1 {
+  text-decoration: underline;
+  color: #361500;
+}
+
+.tg {
+  border: 2px solid #361500;
+  padding: 20px;
+}
+
+.tg thead {
+  background-color: #361500;
+  color: #cc9544;
+}
+.tg td {
+  background-color: #fff;
+  border-right: 1px solid #361500;
+  padding: 10px;
+}
+.tg tr {
+  border: 1px solid #361500;
+}
